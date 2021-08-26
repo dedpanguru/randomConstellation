@@ -9,4 +9,4 @@ Caches the names into constellations.csv and then searches through the file, vas
         - requests
         - pathlib
         Install these using `pip install beautifulsoup4 requests pathlib`
-    3. Enter `python starscraper.py` or `./starscraper.py` and hit enter
+    3. Enter python starscraper.py or ./starscraper.py and hit enter
