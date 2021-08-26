@@ -6,8 +6,8 @@ import csv #csv file processing
 import random #RNG 
 from bs4 import BeautifulSoup #retrieves and searches within the HTML content of the target page
 import requests #accesses the target page
-
-constellations=[] #holds all constellation names retrieved from the link
+# holds all constellation names retrieved from the link
+constellations=[] 
 url="https://www.iau.org/public/themes/constellations/" # the target link
 
 def innerHTML(element):
@@ -29,7 +29,7 @@ def main():
                 # turn row into string with ",".join(row) and get the individual elements with .split(',')
                 constellations = ",".join(row).split(',')
                 # print a random constellation name
-                print(random.choice(constellation_list))
+                print(random.choice(constellations))
     else: # cache file doesn't exist
         # create the cache file
         file = open('constellations.csv','w')
